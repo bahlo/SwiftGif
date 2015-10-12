@@ -14,7 +14,7 @@ class RootViewController: UIViewController {
         super.init(nibName: nil, bundle: nil);
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         // FIXME: Why do we have to implement this?
         super.init(nibName: nil, bundle: nil)
     }
