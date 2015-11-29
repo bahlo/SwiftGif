@@ -22,6 +22,20 @@ Easy, it does the following:
 3. Add frames accordingly to the greatest common divisor to an array
 4. Create an animated UIImage with the frames
 
+## Installation 
+
+SwiftGif is available via Cocoapods: 
+
+```
+pod "SwiftGif"
+```
+
+It's also available via Carthage:
+
+```
+github "bahlo/SwiftGif"
+```
+
 # Inspiration
 This project is heavily inspired by [uiimage-from-animated-gif](https://github.com/mayoff/uiimage-from-animated-gif).
 Kudos to [@mayoff](https://github.com/mayoff). :thumbsup:
