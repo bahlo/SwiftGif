@@ -9,7 +9,7 @@
 import UIKit
 import ImageIO
 
-extension UIImage {
+public extension UIImage {
     
     public class func gifWithData(data: NSData) -> UIImage? {
         guard let source = CGImageSourceCreateWithData(data, nil) else {
@@ -31,7 +31,7 @@ extension UIImage {
         return gifWithData(imageData)
     }
     
-    class func delayForImageAtIndex(index: Int, source: CGImageSource!) -> Double {
+    public class func delayForImageAtIndex(index: Int, source: CGImageSource!) -> Double {
         var delay = 0.1
         
         // Get dictionaries
@@ -40,7 +40,7 @@ extension UIImage {
             CFDictionaryGetValue(cfProperties,
                 unsafeAddressOf(kCGImagePropertyGIFDictionary)),
             CFDictionary.self)
-
+        
         // Get delay time
         var delayObject: AnyObject = unsafeBitCast(
             CFDictionaryGetValue(gifProperties,
@@ -60,7 +60,7 @@ extension UIImage {
         return delay
     }
     
-    class func gcdForPair(var a: Int?, var _ b: Int?) -> Int {
+    public class func gcdForPair(var a: Int?, var _ b: Int?) -> Int {
         // Check if one of them is nil
         if b == nil || a == nil {
             if b != nil {
@@ -93,7 +93,7 @@ extension UIImage {
         }
     }
     
-    class func gcdForArray(array: Array<Int>) -> Int {
+    public class func gcdForArray(array: Array<Int>) -> Int {
         if array.isEmpty {
             return 1
         }
@@ -107,7 +107,7 @@ extension UIImage {
         return gcd
     }
     
-    class func animatedImageWithSource(source: CGImageSource) -> UIImage? {
+    public class func animatedImageWithSource(source: CGImageSource) -> UIImage? {
         let count = CGImageSourceGetCount(source)
         var images = [CGImageRef]()
         var delays = [Int]()
@@ -134,7 +134,7 @@ extension UIImage {
             }
             
             return sum
-            }()
+        }()
         
         // Get frames
         let gcd = gcdForArray(delays)
