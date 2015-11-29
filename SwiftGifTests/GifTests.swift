@@ -9,6 +9,7 @@
 import XCTest
 import UIKit
 import ImageIO
+import SwiftGif
 
 class GifTests: XCTestCase {
 

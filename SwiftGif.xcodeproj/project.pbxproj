@@ -7,35 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1419B388194EFBFD005DF6D0 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */; };
 		1419B389194EFBFD005DF6D0 /* adventure-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B37F194EFBFD005DF6D0 /* adventure-time.gif */; };
 		1419B38A194EFBFD005DF6D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B380194EFBFD005DF6D0 /* AppDelegate.swift */; };
 		1419B38B194EFBFD005DF6D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1419B381194EFBFD005DF6D0 /* Images.xcassets */; };
 		1419B38D194EFBFD005DF6D0 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B383194EFBFD005DF6D0 /* jeremy.gif */; };
 		1419B38E194EFBFD005DF6D0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B384194EFBFD005DF6D0 /* RootViewController.swift */; };
-		1419B38F194EFC11005DF6D0 /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B378194EFBE7005DF6D0 /* GifTests.swift */; };
-		1419B390194EFC15005DF6D0 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B379194EFBE7005DF6D0 /* test.gif */; };
-		1482D73B194EFCF10038192B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */; };
-		7ABA118F1C0A5FC400CC594B /* SwiftGif-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ABA118E1C0A5FC400CC594B /* SwiftGif-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7ABA11931C0A5FC400CC594B /* SwiftGifiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA118C1C0A5FC400CC594B /* SwiftGifiOS.framework */; };
-		7ABA11941C0A5FC400CC594B /* SwiftGifiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA118C1C0A5FC400CC594B /* SwiftGifiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7ABA11991C0A5FC800CC594B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */; };
+		7ABA11C81C0B650A00CC594B /* SwiftGif.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ABA11C71C0B650A00CC594B /* SwiftGif.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ABA11CF1C0B650A00CC594B /* SwiftGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA11C51C0B650A00CC594B /* SwiftGif.framework */; };
+		7ABA11D61C0B650A00CC594B /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABA11D51C0B650A00CC594B /* GifTests.swift */; };
+		7ABA11DA1C0B650A00CC594B /* SwiftGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA11C51C0B650A00CC594B /* SwiftGif.framework */; };
+		7ABA11DB1C0B650A00CC594B /* SwiftGif.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA11C51C0B650A00CC594B /* SwiftGif.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA11E51C0B656100CC594B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABA11E41C0B656100CC594B /* UIImage+Gif.swift */; };
+		7ABA11E71C0B66A400CC594B /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7ABA11E61C0B66A400CC594B /* test.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		14A76446194EFBB800A74B1F /* PBXContainerItemProxy */ = {
+		7ABA11D01C0B650A00CC594B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14A76430194EFBB800A74B1F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 14A76437194EFBB800A74B1F;
+			remoteGlobalIDString = 7ABA11C41C0B650A00CC594B;
 			remoteInfo = SwiftGif;
 		};
-		7ABA11911C0A5FC400CC594B /* PBXContainerItemProxy */ = {
+		7ABA11D81C0B650A00CC594B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14A76430194EFBB800A74B1F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7ABA118B1C0A5FC400CC594B;
-			remoteInfo = "SwiftGif-iOS";
+			remoteGlobalIDString = 7ABA11C41C0B650A00CC594B;
+			remoteInfo = SwiftGif;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -46,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7ABA11941C0A5FC400CC594B /* SwiftGifiOS.framework in Embed Frameworks */,
+				7ABA11DB1C0B650A00CC594B /* SwiftGif.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,21 +53,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1419B378194EFBE7005DF6D0 /* GifTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifTests.swift; sourceTree = "<group>"; };
-		1419B379194EFBE7005DF6D0 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
-		1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		1419B37F194EFBFD005DF6D0 /* adventure-time.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "adventure-time.gif"; sourceTree = "<group>"; };
 		1419B380194EFBFD005DF6D0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1419B381194EFBFD005DF6D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1419B382194EFBFD005DF6D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1419B383194EFBFD005DF6D0 /* jeremy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jeremy.gif; sourceTree = "<group>"; };
 		1419B384194EFBFD005DF6D0 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		1482D739194EFCE00038192B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14A76438194EFBB800A74B1F /* SwiftGif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGif.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		14A76445194EFBB800A74B1F /* SwiftGifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7ABA118C1C0A5FC400CC594B /* SwiftGifiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGifiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7ABA118E1C0A5FC400CC594B /* SwiftGif-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftGif-iOS.h"; sourceTree = "<group>"; };
-		7ABA11901C0A5FC400CC594B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14A76438194EFBB800A74B1F /* SwiftGifDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGifDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABA11C51C0B650A00CC594B /* SwiftGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABA11C71C0B650A00CC594B /* SwiftGif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftGif.h; sourceTree = "<group>"; };
+		7ABA11C91C0B650A00CC594B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABA11CE1C0B650A00CC594B /* SwiftGifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABA11D51C0B650A00CC594B /* GifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTests.swift; sourceTree = "<group>"; };
+		7ABA11D71C0B650A00CC594B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABA11E41C0B656100CC594B /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		7ABA11E61C0B66A400CC594B /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,45 +75,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ABA11931C0A5FC400CC594B /* SwiftGifiOS.framework in Frameworks */,
+				7ABA11DA1C0B650A00CC594B /* SwiftGif.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14A76442194EFBB800A74B1F /* Frameworks */ = {
+		7ABA11C11C0B650A00CC594B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7ABA11881C0A5FC400CC594B /* Frameworks */ = {
+		7ABA11CB1C0B650A00CC594B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABA11CF1C0B650A00CC594B /* SwiftGif.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1419B377194EFBE7005DF6D0 /* SwiftGifTests */ = {
-			isa = PBXGroup;
-			children = (
-				1419B378194EFBE7005DF6D0 /* GifTests.swift */,
-				1419B379194EFBE7005DF6D0 /* test.gif */,
-				1482D739194EFCE00038192B /* Info.plist */,
-			);
-			path = SwiftGifTests;
-			sourceTree = "<group>";
-		};
-		1419B37C194EFBFD005DF6D0 /* SwiftGifCommon */ = {
-			isa = PBXGroup;
-			children = (
-				1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */,
-			);
-			path = SwiftGifCommon;
-			sourceTree = "<group>";
-		};
 		1419B37E194EFBFD005DF6D0 /* SwiftGifDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,9 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				1419B37E194EFBFD005DF6D0 /* SwiftGifDemo */,
-				1419B37C194EFBFD005DF6D0 /* SwiftGifCommon */,
-				1419B377194EFBE7005DF6D0 /* SwiftGifTests */,
-				7ABA118D1C0A5FC400CC594B /* SwiftGif-iOS */,
+				7ABA11C61C0B650A00CC594B /* SwiftGif */,
+				7ABA11D41C0B650A00CC594B /* SwiftGifTests */,
 				14A76439194EFBB800A74B1F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,39 +123,50 @@
 		14A76439194EFBB800A74B1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14A76438194EFBB800A74B1F /* SwiftGif.app */,
-				14A76445194EFBB800A74B1F /* SwiftGifTests.xctest */,
-				7ABA118C1C0A5FC400CC594B /* SwiftGifiOS.framework */,
+				14A76438194EFBB800A74B1F /* SwiftGifDemo.app */,
+				7ABA11C51C0B650A00CC594B /* SwiftGif.framework */,
+				7ABA11CE1C0B650A00CC594B /* SwiftGifTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7ABA118D1C0A5FC400CC594B /* SwiftGif-iOS */ = {
+		7ABA11C61C0B650A00CC594B /* SwiftGif */ = {
 			isa = PBXGroup;
 			children = (
-				7ABA118E1C0A5FC400CC594B /* SwiftGif-iOS.h */,
-				7ABA11901C0A5FC400CC594B /* Info.plist */,
+				7ABA11C71C0B650A00CC594B /* SwiftGif.h */,
+				7ABA11C91C0B650A00CC594B /* Info.plist */,
+				7ABA11E41C0B656100CC594B /* UIImage+Gif.swift */,
 			);
-			path = "SwiftGif-iOS";
+			path = SwiftGif;
+			sourceTree = "<group>";
+		};
+		7ABA11D41C0B650A00CC594B /* SwiftGifTests */ = {
+			isa = PBXGroup;
+			children = (
+				7ABA11D51C0B650A00CC594B /* GifTests.swift */,
+				7ABA11E61C0B66A400CC594B /* test.gif */,
+				7ABA11D71C0B650A00CC594B /* Info.plist */,
+			);
+			path = SwiftGifTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7ABA11891C0A5FC400CC594B /* Headers */ = {
+		7ABA11C21C0B650A00CC594B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ABA118F1C0A5FC400CC594B /* SwiftGif-iOS.h in Headers */,
+				7ABA11C81C0B650A00CC594B /* SwiftGif.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14A76437194EFBB800A74B1F /* SwiftGif */ = {
+		14A76437194EFBB800A74B1F /* SwiftGifDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14A7644F194EFBB800A74B1F /* Build configuration list for PBXNativeTarget "SwiftGif" */;
+			buildConfigurationList = 14A7644F194EFBB800A74B1F /* Build configuration list for PBXNativeTarget "SwiftGifDemo" */;
 			buildPhases = (
 				14A76434194EFBB800A74B1F /* Sources */,
 				14A76435194EFBB800A74B1F /* Frameworks */,
@@ -184,48 +176,48 @@
 			buildRules = (
 			);
 			dependencies = (
-				7ABA11921C0A5FC400CC594B /* PBXTargetDependency */,
+				7ABA11D91C0B650A00CC594B /* PBXTargetDependency */,
+			);
+			name = SwiftGifDemo;
+			productName = SwiftGif;
+			productReference = 14A76438194EFBB800A74B1F /* SwiftGifDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7ABA11C41C0B650A00CC594B /* SwiftGif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ABA11DC1C0B650A00CC594B /* Build configuration list for PBXNativeTarget "SwiftGif" */;
+			buildPhases = (
+				7ABA11C01C0B650A00CC594B /* Sources */,
+				7ABA11C11C0B650A00CC594B /* Frameworks */,
+				7ABA11C21C0B650A00CC594B /* Headers */,
+				7ABA11C31C0B650A00CC594B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
 			);
 			name = SwiftGif;
 			productName = SwiftGif;
-			productReference = 14A76438194EFBB800A74B1F /* SwiftGif.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 7ABA11C51C0B650A00CC594B /* SwiftGif.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		14A76444194EFBB800A74B1F /* SwiftGifTests */ = {
+		7ABA11CD1C0B650A00CC594B /* SwiftGifTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14A76452194EFBB800A74B1F /* Build configuration list for PBXNativeTarget "SwiftGifTests" */;
+			buildConfigurationList = 7ABA11DF1C0B650A00CC594B /* Build configuration list for PBXNativeTarget "SwiftGifTests" */;
 			buildPhases = (
-				14A76441194EFBB800A74B1F /* Sources */,
-				14A76442194EFBB800A74B1F /* Frameworks */,
-				14A76443194EFBB800A74B1F /* Resources */,
+				7ABA11CA1C0B650A00CC594B /* Sources */,
+				7ABA11CB1C0B650A00CC594B /* Frameworks */,
+				7ABA11CC1C0B650A00CC594B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				14A76447194EFBB800A74B1F /* PBXTargetDependency */,
+				7ABA11D11C0B650A00CC594B /* PBXTargetDependency */,
 			);
 			name = SwiftGifTests;
 			productName = SwiftGifTests;
-			productReference = 14A76445194EFBB800A74B1F /* SwiftGifTests.xctest */;
+			productReference = 7ABA11CE1C0B650A00CC594B /* SwiftGifTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7ABA118B1C0A5FC400CC594B /* SwiftGifiOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7ABA11971C0A5FC400CC594B /* Build configuration list for PBXNativeTarget "SwiftGifiOS" */;
-			buildPhases = (
-				7ABA11871C0A5FC400CC594B /* Sources */,
-				7ABA11881C0A5FC400CC594B /* Frameworks */,
-				7ABA11891C0A5FC400CC594B /* Headers */,
-				7ABA118A1C0A5FC400CC594B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftGifiOS;
-			productName = "SwiftGif-iOS";
-			productReference = 7ABA118C1C0A5FC400CC594B /* SwiftGifiOS.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -233,19 +225,19 @@
 		14A76430194EFBB800A74B1F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Arne Bahlo";
 				TargetAttributes = {
 					14A76437194EFBB800A74B1F = {
 						CreatedOnToolsVersion = 6.0;
 					};
-					14A76444194EFBB800A74B1F = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 14A76437194EFBB800A74B1F;
-					};
-					7ABA118B1C0A5FC400CC594B = {
+					7ABA11C41C0B650A00CC594B = {
 						CreatedOnToolsVersion = 7.1;
+					};
+					7ABA11CD1C0B650A00CC594B = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 14A76437194EFBB800A74B1F;
 					};
 				};
 			};
@@ -261,9 +253,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14A76437194EFBB800A74B1F /* SwiftGif */,
-				14A76444194EFBB800A74B1F /* SwiftGifTests */,
-				7ABA118B1C0A5FC400CC594B /* SwiftGifiOS */,
+				14A76437194EFBB800A74B1F /* SwiftGifDemo */,
+				7ABA11C41C0B650A00CC594B /* SwiftGif */,
+				7ABA11CD1C0B650A00CC594B /* SwiftGifTests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,18 +271,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14A76443194EFBB800A74B1F /* Resources */ = {
+		7ABA11C31C0B650A00CC594B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1419B390194EFC15005DF6D0 /* test.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7ABA118A1C0A5FC400CC594B /* Resources */ = {
+		7ABA11CC1C0B650A00CC594B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABA11E71C0B66A400CC594B /* test.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,40 +294,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				1419B38A194EFBFD005DF6D0 /* AppDelegate.swift in Sources */,
-				1419B388194EFBFD005DF6D0 /* UIImage+Gif.swift in Sources */,
 				1419B38E194EFBFD005DF6D0 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14A76441194EFBB800A74B1F /* Sources */ = {
+		7ABA11C01C0B650A00CC594B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1482D73B194EFCF10038192B /* UIImage+Gif.swift in Sources */,
-				1419B38F194EFC11005DF6D0 /* GifTests.swift in Sources */,
+				7ABA11E51C0B656100CC594B /* UIImage+Gif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7ABA11871C0A5FC400CC594B /* Sources */ = {
+		7ABA11CA1C0B650A00CC594B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ABA11991C0A5FC800CC594B /* UIImage+Gif.swift in Sources */,
+				7ABA11D61C0B650A00CC594B /* GifTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		14A76447194EFBB800A74B1F /* PBXTargetDependency */ = {
+		7ABA11D11C0B650A00CC594B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14A76437194EFBB800A74B1F /* SwiftGif */;
-			targetProxy = 14A76446194EFBB800A74B1F /* PBXContainerItemProxy */;
+			target = 7ABA11C41C0B650A00CC594B /* SwiftGif */;
+			targetProxy = 7ABA11D01C0B650A00CC594B /* PBXContainerItemProxy */;
 		};
-		7ABA11921C0A5FC400CC594B /* PBXTargetDependency */ = {
+		7ABA11D91C0B650A00CC594B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7ABA118B1C0A5FC400CC594B /* SwiftGifiOS */;
-			targetProxy = 7ABA11911C0A5FC400CC594B /* PBXContainerItemProxy */;
+			target = 7ABA11C41C0B650A00CC594B /* SwiftGif */;
+			targetProxy = 7ABA11D81C0B650A00CC594B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -444,47 +434,10 @@
 			};
 			name = Release;
 		};
-		14A76453194EFBB800A74B1F /* Debug */ = {
+		7ABA11DD1C0B650A00CC594B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftGif.app/SwiftGif";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftGifTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.arne.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		14A76454194EFBB800A74B1F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftGif.app/SwiftGif";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftGifTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.arne.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
-		7ABA11951C0A5FC400CC594B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -492,23 +445,25 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "SwiftGif-iOS/Info.plist";
+				INFOPLIST_FILE = SwiftGif/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.arne.SwiftGif-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = me.arne.SwiftGif;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7ABA11961C0A5FC400CC594B /* Release */ = {
+		7ABA11DE1C0B650A00CC594B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -517,17 +472,48 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "SwiftGif-iOS/Info.plist";
+				INFOPLIST_FILE = SwiftGif/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.arne.SwiftGif-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = me.arne.SwiftGif;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7ABA11E01C0B650A00CC594B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SwiftGifTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.arne.SwiftGifTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftGifDemo.app/SwiftGifDemo";
+			};
+			name = Debug;
+		};
+		7ABA11E11C0B650A00CC594B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SwiftGifTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = me.arne.SwiftGifTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftGifDemo.app/SwiftGifDemo";
 			};
 			name = Release;
 		};
@@ -543,7 +529,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14A7644F194EFBB800A74B1F /* Build configuration list for PBXNativeTarget "SwiftGif" */ = {
+		14A7644F194EFBB800A74B1F /* Build configuration list for PBXNativeTarget "SwiftGifDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14A76450194EFBB800A74B1F /* Debug */,
@@ -552,23 +538,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14A76452194EFBB800A74B1F /* Build configuration list for PBXNativeTarget "SwiftGifTests" */ = {
+		7ABA11DC1C0B650A00CC594B /* Build configuration list for PBXNativeTarget "SwiftGif" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14A76453194EFBB800A74B1F /* Debug */,
-				14A76454194EFBB800A74B1F /* Release */,
+				7ABA11DD1C0B650A00CC594B /* Debug */,
+				7ABA11DE1C0B650A00CC594B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		7ABA11971C0A5FC400CC594B /* Build configuration list for PBXNativeTarget "SwiftGifiOS" */ = {
+		7ABA11DF1C0B650A00CC594B /* Build configuration list for PBXNativeTarget "SwiftGifTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7ABA11951C0A5FC400CC594B /* Debug */,
-				7ABA11961C0A5FC400CC594B /* Release */,
+				7ABA11E01C0B650A00CC594B /* Debug */,
+				7ABA11E11C0B650A00CC594B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

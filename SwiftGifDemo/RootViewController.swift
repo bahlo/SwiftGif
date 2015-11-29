@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftGif
 
 class RootViewController: UIViewController {
     
