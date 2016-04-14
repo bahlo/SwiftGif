@@ -64,7 +64,12 @@ extension UIImage {
             CFDictionaryGetValue(cfProperties,
                 unsafeAddressOf(kCGImagePropertyGIFDictionary)),
             CFDictionary.self)
-
+            
+        // Check if `gifProperties` is 0x0 object.
+        guard unsafeAddressOf(gifProperties) != nil else {
+            return delay
+        }
+        
         // Get delay time
         var delayObject: AnyObject = unsafeBitCast(
             CFDictionaryGetValue(gifProperties,
