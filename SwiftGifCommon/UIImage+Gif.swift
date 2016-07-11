@@ -9,8 +9,19 @@
 import UIKit
 import ImageIO
 
+private var _xdata: NSData? = nil
+
 extension UIImage {
 
+    var gifData : NSData? {
+      get {
+        return (objc_getAssociatedObject(self, &_xdata) as? NSData)!
+      }
+      set(newValue) {
+        objc_setAssociatedObject(self, &_xdata, newValue, .OBJC_ASSOCIATION_RETAIN)
+      }
+    }
+    
     public class func gifWithData(data: NSData) -> UIImage? {
         // Create source from data
         guard let source = CGImageSourceCreateWithData(data, nil) else {
@@ -18,7 +29,9 @@ extension UIImage {
             return nil
         }
 
-        return UIImage.animatedImageWithSource(source)
+        let image = UIImage.animatedImageWithSource(source)
+        image?.gifData = data
+        return image      
     }
 
     public class func gifWithURL(gifUrl:String) -> UIImage? {
