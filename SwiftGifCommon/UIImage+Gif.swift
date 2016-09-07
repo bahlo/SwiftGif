@@ -60,6 +60,9 @@ extension UIImage {
 
         // Get dictionaries
         let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil)
+        
+        guard CFDictionaryContainsKey(cfProperties, unsafeAddressOf(kCGImagePropertyGIFDictionary)) else {return 0.1}
+        
         let gifProperties: CFDictionaryRef = unsafeBitCast(
             CFDictionaryGetValue(cfProperties,
                 unsafeAddressOf(kCGImagePropertyGIFDictionary)),
