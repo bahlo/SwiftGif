@@ -191,7 +191,8 @@ extension UIImage {
             var sum = 0
 
             for val: Int in delays {
-                sum += val
+                let newVal = Double(val) - (Double(val)/1.5)//Modified calculation to speed up the animtion in gif
+                sum += Int(newVal)
             }
 
             return sum
