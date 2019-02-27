@@ -34,14 +34,14 @@ extension UIImageView {
 
 extension UIImage {
 
-    public class func gif(data: Data) -> UIImage? {
+    public class func gif(data: Data, scale: CGFloat = 1) -> UIImage? {
         // Create source from data
         guard let source = CGImageSourceCreateWithData(data as CFData, nil) else {
             print("SwiftGif: Source for the image does not exist")
             return nil
         }
 
-        return UIImage.animatedImageWithSource(source)
+        return UIImage.animatedImageWithSource(source, scale: scale)
     }
 
     public class func gif(url: String) -> UIImage? {
@@ -171,7 +171,7 @@ extension UIImage {
         return gcd
     }
 
-    internal class func animatedImageWithSource(_ source: CGImageSource) -> UIImage? {
+    internal class func animatedImageWithSource(_ source: CGImageSource, scale: CGFloat) -> UIImage? {
         let count = CGImageSourceGetCount(source)
         var images = [CGImage]()
         var delays = [Int]()
@@ -207,7 +207,7 @@ extension UIImage {
         var frame: UIImage
         var frameCount: Int
         for i in 0..<count {
-            frame = UIImage(cgImage: images[Int(i)])
+            frame = UIImage(cgImage: images[Int(i)], scale: scale, orientation: .up)
             frameCount = Int(delays[Int(i)] / gcd)
 
             for _ in 0..<frameCount {
